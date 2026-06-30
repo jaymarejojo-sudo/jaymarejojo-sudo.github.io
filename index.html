@@ -71,7 +71,7 @@
 
   /* ===== HERO / TERMINAL ===== */
   header {
-    padding: 72px 0 40px;
+    padding: 40px 0 40px;
   }
 
   .quicknav {
@@ -79,24 +79,23 @@
     top: 0;
     z-index: 10;
     display: flex;
-    gap: 10px;
-    padding: 16px 0;
-    margin-bottom: 12px;
-    background: rgba(5, 7, 10, 0.85);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    gap: 12px;
+    padding: 22px 0;
+    background: rgba(5, 7, 10, 0.9);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--line);
   }
 
   .quicknav a {
     font-family: var(--mono);
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 500;
     letter-spacing: 0.3px;
     color: var(--text-dim);
     text-decoration: none;
-    padding: 11px 20px;
-    border-radius: 5px;
+    padding: 13px 24px;
+    border-radius: 6px;
     border: 1px solid var(--line);
     transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
   }
@@ -250,7 +249,7 @@
   .section {
     padding: 52px 0;
     border-top: 1px solid var(--line);
-    scroll-margin-top: 84px;
+    scroll-margin-top: 104px;
   }
 
   .section-head {
@@ -535,6 +534,12 @@
 
 <div class="wrap">
 
+  <nav class="quicknav">
+    <a href="#apps">Apps</a>
+    <a href="#working-with-me">Working&nbsp;with&nbsp;Me</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
   <header>
     <div class="terminal">
       <div class="terminal-bar">
@@ -557,12 +562,6 @@
     <p class="tagline">Flutter &amp; Firebase developer building exam reviewer apps for Philippine civil service and licensure exams, plus group location tools.</p>
     <p class="location-line"><span class="ping"></span>Dauis, Bohol, Philippines</p>
   </header>
-
-  <nav class="quicknav">
-    <a href="#apps">Apps</a>
-    <a href="#working-with-me">Working&nbsp;with&nbsp;Me</a>
-    <a href="#contact">Contact</a>
-  </nav>
 
   <section class="section" id="about">
     <div class="section-head">
@@ -684,14 +683,7 @@
       </div>
 
       <div>
-        <!--
-          FORMSPREE SETUP REQUIRED:
-          1. Create a free account at https://formspree.io
-          2. Create a new form, get your form ID (looks like "xeqybnkj")
-          3. Replace YOUR_FORM_ID below with that ID
-          Until you do this, the form will not actually send anywhere.
-        -->
-        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <form action="https://formspree.io/f/xqevddbp" method="POST">
           <div>
             <label for="name">Name</label>
             <input type="text" id="name" name="name" placeholder="Your name" required>
