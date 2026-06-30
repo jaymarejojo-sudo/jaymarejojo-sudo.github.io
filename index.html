@@ -71,7 +71,41 @@
 
   /* ===== HERO / TERMINAL ===== */
   header {
-    padding: 72px 0 56px;
+    padding: 72px 0 40px;
+  }
+
+  .quicknav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    gap: 4px;
+    padding: 10px 0;
+    margin-bottom: 8px;
+    background: rgba(5, 7, 10, 0.82);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .quicknav a {
+    font-family: var(--mono);
+    font-size: 12.5px;
+    letter-spacing: 0.3px;
+    color: var(--text-dim);
+    text-decoration: none;
+    padding: 7px 13px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+  }
+
+  .quicknav a:hover,
+  .quicknav a:focus-visible {
+    color: var(--cyan);
+    border-color: rgba(94, 234, 212, 0.3);
+    background: rgba(94, 234, 212, 0.06);
+    text-decoration: none;
   }
 
   .terminal {
@@ -215,6 +249,7 @@
   .section {
     padding: 52px 0;
     border-top: 1px solid var(--line);
+    scroll-margin-top: 56px;
   }
 
   .section-head {
@@ -521,6 +556,13 @@
     <p class="tagline">Flutter &amp; Firebase developer building exam reviewer apps for Philippine civil service and licensure exams, plus group location tools.</p>
     <p class="location-line"><span class="ping"></span>Dauis, Bohol, Philippines</p>
   </header>
+
+  <nav class="quicknav">
+    <a href="#about">about</a>
+    <a href="#apps">apps</a>
+    <a href="#working-with-me">working&nbsp;with&nbsp;me</a>
+    <a href="#contact">contact</a>
+  </nav>
 
   <section class="section" id="about">
     <div class="section-head">
